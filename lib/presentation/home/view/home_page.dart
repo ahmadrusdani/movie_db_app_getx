@@ -27,41 +27,46 @@ class HomePage extends GetView<HomeController> {
           }
           return false;
         },
-        child: SingleChildScrollView(
-          controller: controller.scrollController,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              const SizedBox(height: kToolbarHeight + 32),
-              MovieCategory(
-                title: "Now Playing",
-                movies: controller.nowPlayingMovies,
-                isLoading: controller.isLoadingNowPlaying,
-                onSeeMore: controller.goToNowPlaying,
-              ),
-              MovieCategory(
-                title: "Popular",
-                movies: controller.popularMovies,
-                isLoading: controller.isLoadingPopular,
-                onSeeMore: controller.goToPopular,
-              ),
-              MovieCategory(
-                title: "Top Rated",
-                movies: controller.topRatedMovies,
-                isLoading: controller.isLoadingTopRated,
-                onSeeMore: controller.goToTopRated,
-              ),
-              MovieCategory(
-                title: "Upcoming",
-                movies: controller.upcomingMovies,
-                isLoading: controller.isLoadingUpcoming,
-                onSeeMore: controller.goToUpcoming,
-              ),
-            ],
+        child: RefreshIndicator(
+          onRefresh: controller.fetchAllMovies,
+          edgeOffset: kToolbarHeight + 16, // supaya tidak tertutup AppBar
+          child: SingleChildScrollView(
+            physics:
+                const AlwaysScrollableScrollPhysics(), // penting agar bisa refresh saat data kosong
+            controller: controller.scrollController,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const SizedBox(height: kToolbarHeight + 32),
+                MovieCategory(
+                  title: "Now Playing",
+                  movies: controller.nowPlayingMovies,
+                  isLoading: controller.isLoadingNowPlaying,
+                  onSeeMore: controller.goToNowPlaying,
+                ),
+                MovieCategory(
+                  title: "Popular",
+                  movies: controller.popularMovies,
+                  isLoading: controller.isLoadingPopular,
+                  onSeeMore: controller.goToPopular,
+                ),
+                MovieCategory(
+                  title: "Top Rated",
+                  movies: controller.topRatedMovies,
+                  isLoading: controller.isLoadingTopRated,
+                  onSeeMore: controller.goToTopRated,
+                ),
+                MovieCategory(
+                  title: "Upcoming",
+                  movies: controller.upcomingMovies,
+                  isLoading: controller.isLoadingUpcoming,
+                  onSeeMore: controller.goToUpcoming,
+                ),
+              ],
+            ),
           ),
         ),
       ),
     );
   }
-
 }

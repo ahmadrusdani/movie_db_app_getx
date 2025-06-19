@@ -1,5 +1,3 @@
-import 'package:flutter/foundation.dart';
-import 'package:hive/hive.dart';
 import 'package:movie_db_app_getx/data/model/movie/movie_model.dart';
 import 'package:movie_db_app_getx/domain/repository/favorite_repository.dart';
 

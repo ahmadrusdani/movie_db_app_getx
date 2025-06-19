@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:movie_db_app_getx/data/model/movie/movie_model.dart';
+import 'package:movie_db_app_getx/domain/enum/movie_type.dart';
 import 'package:movie_db_app_getx/domain/usecase/favorite_change.dart';
 import 'package:movie_db_app_getx/domain/usecase/now_playing_movie.dart';
 import 'package:movie_db_app_getx/domain/usecase/popular_movie.dart';
@@ -110,18 +111,18 @@ class HomeController extends GetxController {
       favoriteChangeUseCase.removeFavorite(movieId: movieId);
 
   void goToNowPlaying() {
-    Get.toNamed('/category/now_playing');
+    Get.toNamed('/list', arguments: MovieType.nowPlaying.toName);
   }
 
   void goToPopular() {
-    Get.toNamed('/category/popular');
+    Get.toNamed('/list', arguments: MovieType.popular.toName);
   }
 
   void goToTopRated() {
-    Get.toNamed('/category/top_rated');
+    Get.toNamed('/list', arguments: MovieType.topRated.toName);
   }
 
   void goToUpcoming() {
-    Get.toNamed('/category/upcoming');
+    Get.toNamed('/list', arguments: MovieType.upcoming.toName);
   }
 }
