@@ -1,7 +1,4 @@
-// lib/presentation/pages/favorite/favorite_controller.dart
 import 'dart:async';
-
-import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:movie_db_app_getx/domain/usecase/favorite_movie.dart';
