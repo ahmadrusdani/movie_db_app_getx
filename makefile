@@ -30,3 +30,9 @@ apk-open: apk
 
 splash:
 	dart run flutter_native_splash:create
+
+asset-generate:
+	fluttergen -c pubspec.yaml
+
+create-launcher:
+	fvm spawn 3.24.4 pub run flutter_launcher_icons -f flutter_launcher_icons*
