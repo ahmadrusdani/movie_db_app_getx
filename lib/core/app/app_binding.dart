@@ -9,6 +9,7 @@ import 'package:movie_db_app_getx/domain/usecase/favorite_change.dart';
 import 'package:movie_db_app_getx/domain/usecase/favorite_movie.dart';
 import 'package:movie_db_app_getx/domain/usecase/now_playing_movie.dart';
 import 'package:movie_db_app_getx/domain/usecase/popular_movie.dart';
+import 'package:movie_db_app_getx/domain/usecase/search_movie.dart';
 import 'package:movie_db_app_getx/domain/usecase/top_rated_movie.dart';
 import 'package:movie_db_app_getx/domain/usecase/upcoming_movie.dart';
 
@@ -55,6 +56,10 @@ class AppBinding extends Bindings {
     );
     Get.lazyPut<DetailMovie>(
       () => DetailMovie(repository: Get.find()),
+      fenix: true,
+    );
+    Get.lazyPut<SearchMovie>(
+      () => SearchMovie(repository: Get.find()),
       fenix: true,
     );
   }

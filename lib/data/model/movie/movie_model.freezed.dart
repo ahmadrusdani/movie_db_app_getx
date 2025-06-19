@@ -54,7 +54,7 @@ mixin _$MovieModel {
   String? get overview => throw _privateConstructorUsedError;
   @HiveField(13)
   @JsonKey(name: 'release_date')
-  DateTime? get releaseDate => throw _privateConstructorUsedError;
+  String? get releaseDate => throw _privateConstructorUsedError;
 
   /// Serializes this MovieModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
@@ -86,7 +86,7 @@ abstract class $MovieModelCopyWith<$Res> {
       @HiveField(10) String title,
       @HiveField(11) @JsonKey(name: 'vote_average') double? voteAverage,
       @HiveField(12) String? overview,
-      @HiveField(13) @JsonKey(name: 'release_date') DateTime? releaseDate});
+      @HiveField(13) @JsonKey(name: 'release_date') String? releaseDate});
 }
 
 /// @nodoc
@@ -175,7 +175,7 @@ class _$MovieModelCopyWithImpl<$Res, $Val extends MovieModel>
       releaseDate: freezed == releaseDate
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
     ) as $Val);
   }
 }
@@ -202,7 +202,7 @@ abstract class _$$MovieModelImplCopyWith<$Res>
       @HiveField(10) String title,
       @HiveField(11) @JsonKey(name: 'vote_average') double? voteAverage,
       @HiveField(12) String? overview,
-      @HiveField(13) @JsonKey(name: 'release_date') DateTime? releaseDate});
+      @HiveField(13) @JsonKey(name: 'release_date') String? releaseDate});
 }
 
 /// @nodoc
@@ -289,7 +289,7 @@ class __$$MovieModelImplCopyWithImpl<$Res>
       releaseDate: freezed == releaseDate
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
     ));
   }
 }
@@ -379,7 +379,7 @@ class _$MovieModelImpl implements _MovieModel {
   @override
   @HiveField(13)
   @JsonKey(name: 'release_date')
-  final DateTime? releaseDate;
+  final String? releaseDate;
 
   @override
   String toString() {
@@ -472,7 +472,7 @@ abstract class _MovieModel implements MovieModel {
       @HiveField(12) final String? overview,
       @HiveField(13)
       @JsonKey(name: 'release_date')
-      final DateTime? releaseDate}) = _$MovieModelImpl;
+      final String? releaseDate}) = _$MovieModelImpl;
 
   factory _MovieModel.fromJson(Map<String, dynamic> json) =
       _$MovieModelImpl.fromJson;
@@ -525,7 +525,7 @@ abstract class _MovieModel implements MovieModel {
   @override
   @HiveField(13)
   @JsonKey(name: 'release_date')
-  DateTime? get releaseDate;
+  String? get releaseDate;
 
   /// Create a copy of MovieModel
   /// with the given fields replaced by the non-null parameter values.

@@ -72,9 +72,27 @@ class MovieRepositoryImpl extends MovieRepository {
   @override
   Future<MovieDetailModel?> getDetailMovie({required int movieId}) async {
     final response = await apiProvider.getDetailMovie(movieId: movieId);
-    print('getDetailMovie: ${response.body}');
     if (response.status.hasError) {
       return Future<MovieDetailModel?>.error(response.statusText!);
+    } else {
+      return response.body;
+    }
+  }
+
+  @override
+  Future<BaseResponseList<List<MovieModel>>?> getSearchMovie({
+    required String query,
+    int page = 1,
+  }) async {
+    final response = await apiProvider.getSearchMovie(
+      query: query,
+      page: page,
+    );
+
+    if (response.status.hasError) {
+      return Future<BaseResponseList<List<MovieModel>>?>.error(
+        response.statusText!,
+      );
     } else {
       return response.body;
     }

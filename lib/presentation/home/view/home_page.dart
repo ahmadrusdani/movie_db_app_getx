@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:movie_db_app_getx/core/app/app_routes.dart';
 import 'package:movie_db_app_getx/core/theme/theme_colors.dart';
 import 'package:movie_db_app_getx/presentation/home/controller/home_controller.dart';
 import 'package:movie_db_app_getx/presentation/home/widget/home_appbar.dart';
@@ -17,7 +18,7 @@ class HomePage extends GetView<HomeController> {
         preferredSize: const Size.fromHeight(kToolbarHeight),
         child: Obx(() => HomeAppbar(
               opacity: controller.appBarOpacity.value,
-              onSearchTap: () => Get.toNamed('/search'),
+              onSearchTap: () => Get.toNamed(AppRoutes.search),
             )),
       ),
       body: NotificationListener<ScrollNotification>(

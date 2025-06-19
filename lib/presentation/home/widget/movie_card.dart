@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:movie_db_app_getx/core/app/app_routes.dart';
 import 'package:movie_db_app_getx/core/constants.dart';
 import 'package:movie_db_app_getx/core/theme/text_styles.dart';
 import 'package:movie_db_app_getx/core/theme/theme_colors.dart';
@@ -14,7 +15,7 @@ class MovieCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () => Get.toNamed('/detail', arguments: movie.id),
+      onTap: () => Get.toNamed(AppRoutes.detail, arguments: movie.id),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 8.0),
         child: Column(

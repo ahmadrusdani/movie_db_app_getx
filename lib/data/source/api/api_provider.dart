@@ -19,7 +19,13 @@ abstract class IApiProvider {
 
   Future<Response<BaseResponseList<List<MovieModel>>>> getUpcomingMovie(
       {int page = 1});
+
   Future<Response<MovieDetailModel>> getDetailMovie({required int movieId});
+
+  Future<Response<BaseResponseList<List<MovieModel>>>> getSearchMovie({
+    required String query,
+    int page = 1,
+  });
 }
 
 class ApiProvider extends GetConnect implements IApiProvider {
@@ -124,6 +130,30 @@ class ApiProvider extends GetConnect implements IApiProvider {
     return get(
       Constants.detailMovie + movieId.toString(),
       decoder: (data) => MovieDetailModel.fromJson(data),
+    );
+  }
+
+  @override
+  Future<Response<BaseResponseList<List<MovieModel>>>> getSearchMovie(
+      {required String query, int page = 1}) {
+    return get(
+      Constants.searchMovie,
+      query: {
+        'page': page.toString(),
+        'query': query,
+      },
+      decoder: (data) {
+        return BaseResponseList.fromJson(
+          data,
+          (json) {
+            final list = (json as List);
+            if (list.isEmpty) return [];
+            return list
+                .map((e) => MovieModel.fromJson(e as Map<String, dynamic>))
+                .toList();
+          },
+        );
+      },
     );
   }
 }

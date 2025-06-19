@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:movie_db_app_getx/core/app/app_routes.dart';
 import 'package:movie_db_app_getx/core/constants.dart';
 import 'package:movie_db_app_getx/core/theme/text_styles.dart';
 import 'package:movie_db_app_getx/core/theme/theme_colors.dart';
@@ -45,7 +46,7 @@ class FavoritePage extends GetView<FavoriteController> {
                   itemBuilder: (context, index) {
                     final movie = favorites[index];
                     return GestureDetector(
-                      onTap: () => Get.toNamed('/detail', arguments: movie.id),
+                      onTap: () => Get.toNamed(AppRoutes.detail, arguments: movie.id),
                       child: Padding(
                         padding: const EdgeInsets.all(12),
                         child: Row(

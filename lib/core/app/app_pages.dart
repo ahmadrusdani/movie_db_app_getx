@@ -9,6 +9,8 @@ import 'package:movie_db_app_getx/presentation/favorite/controller/favorite_cont
 import 'package:movie_db_app_getx/presentation/home/controller/home_controller.dart';
 import 'package:movie_db_app_getx/presentation/list/controller/movie_list_controller.dart';
 import 'package:movie_db_app_getx/presentation/list/view/movie_list_page.dart';
+import 'package:movie_db_app_getx/presentation/search/controller/search_controller.dart';
+import 'package:movie_db_app_getx/presentation/search/view/search_page.dart';
 
 class AppPages {
   static final routes = [
@@ -56,6 +58,15 @@ class AppPages {
               topRatedMovieUseCase: Get.find(),
               upcomingMovieUseCase: Get.find(),
               movieType: movieType.type,
+            ));
+      }),
+    ),
+    GetPage(
+      name: AppRoutes.search,
+      page: () => const SearchPage(),
+      binding: BindingsBuilder(() {
+        Get.lazyPut<SearchPageController>(() => SearchPageController(
+              searchMovieUseCase: Get.find(),
             ));
       }),
     ),

@@ -33,7 +33,7 @@ class MovieDetailModelAdapter extends TypeAdapter<MovieDetailModel> {
       posterPath: fields[13] as String?,
       productionCompanies: (fields[14] as List).cast<ProductionCompanyModel>(),
       productionCountries: (fields[15] as List).cast<ProductionCountryModel>(),
-      releaseDate: fields[16] as DateTime?,
+      releaseDate: fields[16] as String?,
       revenue: fields[17] as int,
       runtime: fields[18] as int?,
       spokenLanguages: (fields[19] as List).cast<SpokenLanguageModel>(),
@@ -151,9 +151,7 @@ _$MovieDetailModelImpl _$$MovieDetailModelImplFromJson(
           .map(
               (e) => ProductionCountryModel.fromJson(e as Map<String, dynamic>))
           .toList(),
-      releaseDate: json['release_date'] == null
-          ? null
-          : DateTime.parse(json['release_date'] as String),
+      releaseDate: json['release_date'] as String?,
       revenue: (json['revenue'] as num).toInt(),
       runtime: (json['runtime'] as num?)?.toInt(),
       spokenLanguages: (json['spoken_languages'] as List<dynamic>)
@@ -186,7 +184,7 @@ Map<String, dynamic> _$$MovieDetailModelImplToJson(
       'poster_path': instance.posterPath,
       'production_companies': instance.productionCompanies,
       'production_countries': instance.productionCountries,
-      'release_date': instance.releaseDate?.toIso8601String(),
+      'release_date': instance.releaseDate,
       'revenue': instance.revenue,
       'runtime': instance.runtime,
       'spoken_languages': instance.spokenLanguages,

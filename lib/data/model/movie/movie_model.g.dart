@@ -30,7 +30,7 @@ class MovieModelAdapter extends TypeAdapter<MovieModel> {
       title: fields[10] as String,
       voteAverage: fields[11] as double?,
       overview: fields[12] as String?,
-      releaseDate: fields[13] as DateTime?,
+      releaseDate: fields[13] as String?,
     );
   }
 
@@ -101,9 +101,7 @@ _$MovieModelImpl _$$MovieModelImplFromJson(Map<String, dynamic> json) =>
       title: json['title'] as String,
       voteAverage: (json['vote_average'] as num?)?.toDouble(),
       overview: json['overview'] as String?,
-      releaseDate: json['release_date'] == null
-          ? null
-          : DateTime.parse(json['release_date'] as String),
+      releaseDate: json['release_date'] as String?,
     );
 
 Map<String, dynamic> _$$MovieModelImplToJson(_$MovieModelImpl instance) =>
@@ -121,5 +119,5 @@ Map<String, dynamic> _$$MovieModelImplToJson(_$MovieModelImpl instance) =>
       'title': instance.title,
       'vote_average': instance.voteAverage,
       'overview': instance.overview,
-      'release_date': instance.releaseDate?.toIso8601String(),
+      'release_date': instance.releaseDate,
     };

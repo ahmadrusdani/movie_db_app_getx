@@ -8,4 +8,8 @@ abstract class MovieRepository {
   Future<BaseResponseList<List<MovieModel>>?> getTopRatedMovie({int page = 1});
   Future<BaseResponseList<List<MovieModel>>?> getUpcomingMovie({int page = 1});
   Future<MovieDetailModel?> getDetailMovie({required int movieId});
+  Future<BaseResponseList<List<MovieModel>>?> getSearchMovie({
+    required String query,
+    int page = 1,
+  });
 }

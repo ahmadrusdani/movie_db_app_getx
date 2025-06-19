@@ -82,8 +82,8 @@ class MovieContent extends StatelessWidget {
               ),
               const SizedBox(height: 8),
               Text(
-                movie.releaseDate != null
-                    ? Formatter.formatFullDate(movie.releaseDate!)
+                movie.releaseDate != null && movie.releaseDate != ''
+                    ? Formatter.formatFullDate(DateTime.parse(movie.releaseDate!))
                     : 'Unknown year',
                 style: TextStyle(
                   color: Colors.grey[600],

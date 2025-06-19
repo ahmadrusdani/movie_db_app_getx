@@ -22,7 +22,7 @@ class MovieModel with _$MovieModel {
     @HiveField(10) required String title,
     @HiveField(11) @JsonKey(name: 'vote_average') double? voteAverage,
     @HiveField(12) String? overview,
-    @HiveField(13) @JsonKey(name: 'release_date') DateTime? releaseDate,
+    @HiveField(13) @JsonKey(name: 'release_date') String? releaseDate,
   }) = _MovieModel;
 
   factory MovieModel.fromJson(Map<String, dynamic> json) =>

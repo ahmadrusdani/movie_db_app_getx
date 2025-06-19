@@ -66,7 +66,7 @@ mixin _$MovieDetailModel {
       throw _privateConstructorUsedError;
   @HiveField(16)
   @JsonKey(name: 'release_date')
-  DateTime? get releaseDate => throw _privateConstructorUsedError;
+  String? get releaseDate => throw _privateConstructorUsedError;
   @HiveField(17)
   int get revenue => throw _privateConstructorUsedError;
   @HiveField(18)
@@ -129,7 +129,7 @@ abstract class $MovieDetailModelCopyWith<$Res> {
       @HiveField(15)
       @JsonKey(name: 'production_countries')
       List<ProductionCountryModel> productionCountries,
-      @HiveField(16) @JsonKey(name: 'release_date') DateTime? releaseDate,
+      @HiveField(16) @JsonKey(name: 'release_date') String? releaseDate,
       @HiveField(17) int revenue,
       @HiveField(18) int? runtime,
       @HiveField(19)
@@ -255,7 +255,7 @@ class _$MovieDetailModelCopyWithImpl<$Res, $Val extends MovieDetailModel>
       releaseDate: freezed == releaseDate
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       revenue: null == revenue
           ? _value.revenue
           : revenue // ignore: cast_nullable_to_non_nullable
@@ -341,7 +341,7 @@ abstract class _$$MovieDetailModelImplCopyWith<$Res>
       @HiveField(15)
       @JsonKey(name: 'production_countries')
       List<ProductionCountryModel> productionCountries,
-      @HiveField(16) @JsonKey(name: 'release_date') DateTime? releaseDate,
+      @HiveField(16) @JsonKey(name: 'release_date') String? releaseDate,
       @HiveField(17) int revenue,
       @HiveField(18) int? runtime,
       @HiveField(19)
@@ -466,7 +466,7 @@ class __$$MovieDetailModelImplCopyWithImpl<$Res>
       releaseDate: freezed == releaseDate
           ? _value.releaseDate
           : releaseDate // ignore: cast_nullable_to_non_nullable
-              as DateTime?,
+              as String?,
       revenue: null == revenue
           ? _value.revenue
           : revenue // ignore: cast_nullable_to_non_nullable
@@ -646,7 +646,7 @@ class _$MovieDetailModelImpl implements _MovieDetailModel {
   @override
   @HiveField(16)
   @JsonKey(name: 'release_date')
-  final DateTime? releaseDate;
+  final String? releaseDate;
   @override
   @HiveField(17)
   final int revenue;
@@ -816,7 +816,7 @@ abstract class _MovieDetailModel implements MovieDetailModel {
       @HiveField(15)
       @JsonKey(name: 'production_countries')
       required final List<ProductionCountryModel> productionCountries,
-      @HiveField(16) @JsonKey(name: 'release_date') final DateTime? releaseDate,
+      @HiveField(16) @JsonKey(name: 'release_date') final String? releaseDate,
       @HiveField(17) required final int revenue,
       @HiveField(18) final int? runtime,
       @HiveField(19)
@@ -896,7 +896,7 @@ abstract class _MovieDetailModel implements MovieDetailModel {
   @override
   @HiveField(16)
   @JsonKey(name: 'release_date')
-  DateTime? get releaseDate;
+  String? get releaseDate;
   @override
   @HiveField(17)
   int get revenue;

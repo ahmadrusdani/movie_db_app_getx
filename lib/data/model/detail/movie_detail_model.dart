@@ -29,7 +29,7 @@ class MovieDetailModel with _$MovieDetailModel {
     @HiveField(13) @JsonKey(name: 'poster_path') String? posterPath,
     @HiveField(14) @JsonKey(name: 'production_companies') required List<ProductionCompanyModel> productionCompanies,
     @HiveField(15) @JsonKey(name: 'production_countries') required List<ProductionCountryModel> productionCountries,
-    @HiveField(16) @JsonKey(name: 'release_date') DateTime? releaseDate,
+    @HiveField(16) @JsonKey(name: 'release_date') String? releaseDate,
     @HiveField(17) required int revenue,
     @HiveField(18) int? runtime,
     @HiveField(19) @JsonKey(name: 'spoken_languages') required List<SpokenLanguageModel> spokenLanguages,
