@@ -16,18 +16,18 @@ class DetailMovie {
     try {
       final result = await repository.getDetailMovie(movieId: movieId);
       if (result != null) {
-        await box.delete(movieId);
+        await box.put(movieId, result);
+        return result;
       }
-      print('resultDetail: $result');
-      await box.put(movieId, result!);
-      return result;
+
+      final cachedData = box.get(movieId);
+      return cachedData;
     } catch (e) {
-      print('errorDetail: ${e.toString()}');
       final movie = box.get(movieId);
       if (movie != null) {
         return movie;
       }
-      return Future<MovieDetailModel>.error(e.toString());
+      throw Exception(e.toString());
     }
   }
 }

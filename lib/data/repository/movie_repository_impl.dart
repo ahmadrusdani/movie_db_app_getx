@@ -88,7 +88,6 @@ class MovieRepositoryImpl extends MovieRepository {
       query: query,
       page: page,
     );
-
     if (response.status.hasError) {
       return Future<BaseResponseList<List<MovieModel>>?>.error(
         response.statusText!,

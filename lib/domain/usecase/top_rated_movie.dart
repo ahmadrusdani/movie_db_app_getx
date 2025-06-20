@@ -34,7 +34,7 @@ class TopRatedMovie {
           results: isPreview ? movie.take(20).toList() : movie,
         );
       }
-      return Future<BaseResponseList<List<MovieModel>>>.error(e.toString());
+      throw Exception(e.toString());
     }
   }
 }

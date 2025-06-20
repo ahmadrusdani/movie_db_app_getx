@@ -52,14 +52,14 @@ class MovieDetailController extends GetxController {
     try {
       isFavorite.value = !isFavorite.value;
       if (isFavorite.value) {
-        favoriteChangeUseCase.setFavorite(
+        await favoriteChangeUseCase.setFavorite(
           movie: MovieMapper.toMovieModel(movie.value!),
         );
       } else {
-        favoriteChangeUseCase.removeFavorite(movieId: movie.value!.id);
+        await favoriteChangeUseCase.removeFavorite(movieId: movie.value!.id);
       }
     } catch (e) {
-      isFavorite.value = !isFavorite.value; // Revert on error
+      isFavorite.value = !isFavorite.value;
       Get.snackbar('Error', 'Failed to update favorites');
     }
   }

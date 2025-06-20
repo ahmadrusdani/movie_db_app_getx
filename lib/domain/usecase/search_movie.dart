@@ -18,10 +18,9 @@ class SearchMovie {
         query: query,
         page: page,
       );
-      return result!;
+      return result;
     } catch (e) {
-      print('errorSearchUseCase: ${e.toString()}');
-      return Future<BaseResponseList<List<MovieModel>>>.error(e.toString());
+      throw Exception(e.toString());
     }
   }
 }

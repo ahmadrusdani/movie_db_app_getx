@@ -8,12 +8,20 @@ class FavoriteChange {
 
   final FavoriteRepository repository;
 
-  void setFavorite({required MovieModel movie}) async {
-    await repository.setFavorite(movie: movie);
+  Future<void> setFavorite({required MovieModel movie}) async {
+    try {
+      await repository.setFavorite(movie: movie);
+    } catch (e) {
+      rethrow;
+    }
   }
 
-  void removeFavorite({required int movieId}) async {
-    await repository.removeFavorite(movieId: movieId);
+  Future<void> removeFavorite({required int movieId}) async {
+    try {
+      await repository.removeFavorite(movieId: movieId);
+    } catch (e) {
+      rethrow;
+    }
   }
 
   Future<bool> isFavorite({required int movieId}) async {

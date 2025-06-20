@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:movie_db_app_getx/core/theme/text_styles.dart';
 import 'package:movie_db_app_getx/presentation/detail/controller/movie_detail_controller.dart';
 
 class ErrorState extends StatelessWidget {
@@ -15,7 +16,7 @@ class ErrorState extends StatelessWidget {
           const SizedBox(height: 16),
           const Text(
             'Failed to load movie details',
-            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            style: TextStyles.bold14,
           ),
           const SizedBox(height: 8),
           TextButton(

@@ -36,3 +36,9 @@ asset-generate:
 
 create-launcher:
 	fvm spawn 3.24.4 pub run flutter_launcher_icons -f flutter_launcher_icons*
+
+name:
+	fvm spawn 3.24.4 pub run launcher_name:main
+
+domain-test:
+	fvm spawn 3.24.4 test test/unit/domain/

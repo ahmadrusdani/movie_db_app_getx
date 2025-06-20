@@ -14,14 +14,12 @@ class HomeController extends GetxController {
   final NowPlayingMovie nowPlayingMovieUseCase;
   final TopRatedMovie topRatedMovieUseCase;
   final UpcomingMovie upcomingMovieUseCase;
-  final FavoriteChange favoriteChangeUseCase;
 
   HomeController({
     required this.popularMovieUseCase,
     required this.nowPlayingMovieUseCase,
     required this.topRatedMovieUseCase,
     required this.upcomingMovieUseCase,
-    required this.favoriteChangeUseCase,
   });
 
   var popularMovies = <MovieModel>[].obs;
@@ -33,6 +31,11 @@ class HomeController extends GetxController {
   var isLoadingNowPlaying = false.obs;
   var isLoadingTopRated = false.obs;
   var isLoadingUpcoming = false.obs;
+
+  var isErrorPopular = false.obs;
+  var isErrorNowPlaying = false.obs;
+  var isErrorTopRated = false.obs;
+  var isErrorUpcoming = false.obs;
 
   final appBarOpacity = 1.0.obs;
   final scrollController = ScrollController();
@@ -74,42 +77,59 @@ class HomeController extends GetxController {
 
   Future<void> fetchPopularMovies() async {
     try {
+      isErrorPopular.value = false;
       isLoadingPopular.value = true;
       final result = await popularMovieUseCase.call(page: 1);
       popularMovies.assignAll(result?.results ?? []);
-      isLoadingPopular.value = false;
     } catch (e) {
       debugPrint(e.toString());
+      isErrorPopular.value = true;
+    } finally {
       isLoadingPopular.value = false;
     }
   }
 
   Future<void> fetchNowPlayingMovies() async {
-    isLoadingNowPlaying.value = true;
-    final result = await nowPlayingMovieUseCase.call(page: 1);
-    nowPlayingMovies.assignAll(result?.results ?? []);
-    isLoadingNowPlaying.value = false;
+    try {
+      isErrorNowPlaying.value = false;
+      isLoadingNowPlaying.value = true;
+      final result = await nowPlayingMovieUseCase.call(page: 1);
+      nowPlayingMovies.assignAll(result?.results ?? []);
+    } catch (e) {
+      debugPrint(e.toString());
+      isErrorNowPlaying.value = true;
+    } finally {
+      isLoadingNowPlaying.value = false;
+    }
   }
 
   Future<void> fetchTopRatedMovies() async {
-    isLoadingTopRated.value = true;
-    final result = await topRatedMovieUseCase.call(page: 1);
-    topRatedMovies.assignAll(result?.results ?? []);
-    isLoadingTopRated.value = false;
+    try {
+      isErrorTopRated.value = false;
+      isLoadingTopRated.value = true;
+      final result = await topRatedMovieUseCase.call(page: 1);
+      topRatedMovies.assignAll(result?.results ?? []);
+    } catch (e) {
+      debugPrint(e.toString());
+      isErrorTopRated.value = true;
+    } finally {
+      isLoadingTopRated.value = false;
+    }
   }
 
   Future<void> fetchUpcomingMovies() async {
-    isLoadingUpcoming.value = true;
-    final result = await upcomingMovieUseCase.call(page: 1);
-    upcomingMovies.assignAll(result?.results ?? []);
-    isLoadingUpcoming.value = false;
+    try {
+      isErrorUpcoming.value = false;
+      isLoadingUpcoming.value = true;
+      final result = await upcomingMovieUseCase.call(page: 1);
+      upcomingMovies.assignAll(result?.results ?? []);
+    } catch (e) {
+      debugPrint(e.toString());
+      isErrorUpcoming.value = true;
+    } finally {
+      isLoadingUpcoming.value = false;
+    }
   }
-
-  void setFavorite(MovieModel movie) =>
-      favoriteChangeUseCase.setFavorite(movie: movie);
-
-  void removeFavorite(int movieId) =>
-      favoriteChangeUseCase.removeFavorite(movieId: movieId);
 
   void goToNowPlaying() {
     Get.toNamed(AppRoutes.list, arguments: MovieType.nowPlaying.toName);

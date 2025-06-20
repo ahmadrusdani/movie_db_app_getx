@@ -24,7 +24,6 @@ class AppPages {
               popularMovieUseCase: Get.find(),
               topRatedMovieUseCase: Get.find(),
               upcomingMovieUseCase: Get.find(),
-              favoriteChangeUseCase: Get.find(),
             ));
         Get.lazyPut<FavoriteController>(() => FavoriteController(
               favoriteUseCase: Get.find(),

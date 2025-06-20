@@ -1,0 +1,411 @@
+{
+    "dates": {
+        "maximum": "2025-07-16",
+        "minimum": "2025-06-25"
+    },
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/eQV9rSQ6S1ja4lGTwHTnQuVhoG.jpg",
+            "genre_ids": [
+                27,
+                35,
+                14,
+                18
+            ],
+            "id": 1284120,
+            "original_language": "no",
+            "original_title": "Den stygge stesøsteren",
+            "overview": "In a fairy-tale kingdom where beauty is a brutal business, Elvira battles to compete with her incredibly beautiful stepsister, and she will go to any length to catch the prince’s eye.",
+            "popularity": 114.1627,
+            "poster_path": "/crX9rSg9EohybhkEe8iTQUCe55y.jpg",
+            "release_date": "2025-03-07",
+            "title": "The Ugly Stepsister",
+            "video": false,
+            "vote_average": 7.095,
+            "vote_count": 184
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/v67tbCB03CMcJRWit8CS7JdJp6.jpg",
+            "genre_ids": [
+                28,
+                18,
+                53
+            ],
+            "id": 757725,
+            "original_language": "en",
+            "original_title": "Shadow Force",
+            "overview": "Kyrah and Isaac were once the leaders of a multinational special forces group called Shadow Force. They broke the rules by falling in love, and in order to protect their son, they go underground. With a large bounty on their heads, and the vengeful Shadow Force hot on their trail, one family's fight becomes all-out war.",
+            "popularity": 97.1359,
+            "poster_path": "/7IEW24vBiZerZrDlgLVSUU3oT1C.jpg",
+            "release_date": "2025-05-01",
+            "title": "Shadow Force",
+            "video": false,
+            "vote_average": 6.372,
+            "vote_count": 78
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/6WqqEjiycNvDLjbEClM1zCwIbDD.jpg",
+            "genre_ids": [
+                27,
+                53,
+                878
+            ],
+            "id": 1100988,
+            "original_language": "en",
+            "original_title": "28 Years Later",
+            "overview": "Twenty-eight years since the rage virus escaped a biological weapons laboratory, now, still in a ruthlessly enforced quarantine, some have found ways to exist amidst the infected. One such group lives on a small island connected to the mainland by a single, heavily-defended causeway. When one member departs on a mission into the dark heart of the mainland, he discovers secrets, wonders, and horrors that have mutated not only the infected but other survivors as well.",
+            "popularity": 86.7855,
+            "poster_path": "/drg4tQuZatkA0pXR7YLvlxZNNEe.jpg",
+            "release_date": "2025-06-18",
+            "title": "28 Years Later",
+            "video": false,
+            "vote_average": 7.6,
+            "vote_count": 53
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hKmRJ4pWBjhVOhgLAFzXddpc69p.jpg",
+            "genre_ids": [
+                12,
+                16,
+                18,
+                10751
+            ],
+            "id": 589018,
+            "original_language": "fr",
+            "original_title": "Sauvages",
+            "overview": "In Borneo, near the tropical forest, Kéria rescues a baby orangutang in the palm oil plantation where her father works. Kéria's cousin Selaï comes to live with them seeking refuge from the conflict between his indigenous tribe and the logging companies. Kéria, Selaï and the little orangutang, now named Oshi, will have to fight against their forest’s destruction.",
+            "popularity": 61.672,
+            "poster_path": "/qC6yrKvmIEnkFVjpp0U7u02SiDQ.jpg",
+            "release_date": "2024-10-16",
+            "title": "Savages",
+            "video": false,
+            "vote_average": 7.0,
+            "vote_count": 23
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/mBDoBHUZHHy9WG7dRFndjB8adhc.jpg",
+            "genre_ids": [
+                10751,
+                35,
+                12,
+                16,
+                878
+            ],
+            "id": 1022787,
+            "original_language": "en",
+            "original_title": "Elio",
+            "overview": "Elio, a space fanatic with an active imagination, finds himself on a cosmic misadventure where he must form new bonds with eccentric alien lifeforms, navigate a crisis of intergalactic proportions and somehow discover who he is truly meant to be.",
+            "popularity": 60.1948,
+            "poster_path": "/w2ARwtc1zoh0pyfwmyhpZHwuXgK.jpg",
+            "release_date": "2025-06-18",
+            "title": "Elio",
+            "video": false,
+            "vote_average": 6.7,
+            "vote_count": 24
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zOpe0eHsq0A2NvNyBbtT6sj53qV.jpg",
+            "genre_ids": [
+                28,
+                878,
+                35,
+                10751
+            ],
+            "id": 939243,
+            "original_language": "en",
+            "original_title": "Sonic the Hedgehog 3",
+            "overview": "Sonic, Knuckles, and Tails reunite against a powerful new adversary, Shadow, a mysterious villain with powers unlike anything they have faced before. With their abilities outmatched in every way, Team Sonic must seek out an unlikely alliance in hopes of stopping Shadow and protecting the planet.",
+            "popularity": 58.9546,
+            "poster_path": "/d8Ryb8AunYAuycVKDp5HpdWPKgC.jpg",
+            "release_date": "2024-12-19",
+            "title": "Sonic the Hedgehog 3",
+            "video": false,
+            "vote_average": 7.716,
+            "vote_count": 2693
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lqwwGkwJHtz9QgKtz4zeY19YgDg.jpg",
+            "genre_ids": [
+                10749,
+                18
+            ],
+            "id": 1136867,
+            "original_language": "en",
+            "original_title": "Materialists",
+            "overview": "A young, ambitious New York City matchmaker finds herself torn between the perfect match and her imperfect ex.",
+            "popularity": 48.118,
+            "poster_path": "/eDo0pNruy0Qgj6BdTyHIR4cxHY8.jpg",
+            "release_date": "2025-06-12",
+            "title": "Materialists",
+            "video": false,
+            "vote_average": 7.315,
+            "vote_count": 27
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dJ1JpHuTCRxtGpRq8bQzk2jBqTi.jpg",
+            "genre_ids": [
+                10751,
+                14,
+                12
+            ],
+            "id": 896536,
+            "original_language": "en",
+            "original_title": "The Legend of Ochi",
+            "overview": "In a remote village on the island of Carpathia, a shy farm girl named Yuri is raised to fear an elusive animal species known as ochi. But when Yuri discovers a wounded baby ochi has been left behind, she escapes on a quest to bring him home.",
+            "popularity": 47.7435,
+            "poster_path": "/wVujUVvY4qvKARAslItQ4ARKqtz.jpg",
+            "release_date": "2025-04-18",
+            "title": "The Legend of Ochi",
+            "video": false,
+            "vote_average": 6.4,
+            "vote_count": 123
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/ce51NvJSO5ReNkm3C3YDX5jsH1V.jpg",
+            "genre_ids": [
+                12,
+                10751,
+                99
+            ],
+            "id": 1094473,
+            "original_language": "fr",
+            "original_title": "Bambi, l'histoire d'une vie dans les bois",
+            "overview": "The life of Bambi, a male roe deer, from his birth through childhood, the loss of his mother, the finding of a mate, the lessons he learns from his father, and the experience he gains about the dangers posed by human hunters in the forest.",
+            "popularity": 47.2482,
+            "poster_path": "/vWNVHtwOhcoOEUSrY1iHRGbgH8O.jpg",
+            "release_date": "2024-10-16",
+            "title": "Bambi: A Life in the Woods",
+            "video": false,
+            "vote_average": 6.036,
+            "vote_count": 28
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/puMI67KEDPCetj23ZSIhsViyMZy.jpg",
+            "genre_ids": [
+                878,
+                12,
+                28
+            ],
+            "id": 1234821,
+            "original_language": "en",
+            "original_title": "Jurassic World Rebirth",
+            "overview": "Five years after the events of Jurassic World Dominion, covert operations expert Zora Bennett is contracted to lead a skilled team on a top-secret mission to secure genetic material from the world's three most massive dinosaurs. When Zora's operation intersects with a civilian family whose boating expedition was capsized, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery that's been hidden from the world for decades.",
+            "popularity": 46.7286,
+            "poster_path": "/q0fGCmjLu42MPlSO9OYWpI5w86I.jpg",
+            "release_date": "2025-07-01",
+            "title": "Jurassic World Rebirth",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lSbblLngbeZIn6G4WXDcyQ6SLhw.jpg",
+            "genre_ids": [
+                28,
+                18
+            ],
+            "id": 911430,
+            "original_language": "en",
+            "original_title": "F1 The Movie",
+            "overview": "Racing legend Sonny Hayes is coaxed out of retirement to lead a struggling Formula 1 team—and mentor a young hotshot driver—while chasing one more chance at glory.",
+            "popularity": 46.5745,
+            "poster_path": "/vqBmyAj0Xm9LnS1xe1MSlMAJyHq.jpg",
+            "release_date": "2025-06-25",
+            "title": "F1 The Movie",
+            "video": false,
+            "vote_average": 8.0,
+            "vote_count": 1
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jKMbP0rwEkJYxkNRFQXFkVIIzGP.jpg",
+            "genre_ids": [
+                18,
+                10749
+            ],
+            "id": 1092506,
+            "original_language": "en",
+            "original_title": "On Swift Horses",
+            "overview": "In the 1950s, a seemingly sensible newlywed and her wayward brother-in-law undertake parallel journeys of risk, romance, and self-discovery.",
+            "popularity": 39.9133,
+            "poster_path": "/qs2AeWbLklk9I5UbI8bllZVfF2V.jpg",
+            "release_date": "2025-04-24",
+            "title": "On Swift Horses",
+            "video": false,
+            "vote_average": 6.0,
+            "vote_count": 35
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/mMS24Uh4AsgkchTFFQaOwFnFDnO.jpg",
+            "genre_ids": [
+                28,
+                12,
+                878
+            ],
+            "id": 1061474,
+            "original_language": "en",
+            "original_title": "Superman",
+            "overview": "Superman, a journalist in Metropolis, embarks on a journey to reconcile his Kryptonian heritage with his human upbringing as Clark Kent.",
+            "popularity": 37.6631,
+            "poster_path": "/ombsmhYUqR4qqOLOxAyr5V8hbyv.jpg",
+            "release_date": "2025-07-09",
+            "title": "Superman",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/8btfz81bOJ2lC7cujYBTw03wzg3.jpg",
+            "genre_ids": [
+                16,
+                14,
+                12
+            ],
+            "id": 980477,
+            "original_language": "zh",
+            "original_title": "哪吒之魔童闹海",
+            "overview": "Following the Tribulation, although the souls of Ne Zha and Ao Bing were preserved, their physical bodies will soon be destroyed. Tai Yi Zhen Ren plans to use the Seven Colored Lotus to reshape their physical forms, but encounters numerous difficulties. What will become of Ne Zha and Ao Bing?",
+            "popularity": 32.8897,
+            "poster_path": "/293Mo4GWf7Tl0TfAr5NFghqeMy7.jpg",
+            "release_date": "2025-01-29",
+            "title": "Ne Zha 2",
+            "video": false,
+            "vote_average": 8.0,
+            "vote_count": 177
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/P82NAcEsLIYgQtrtn36tYsj41m.jpg",
+            "genre_ids": [
+                10751,
+                35,
+                12,
+                16
+            ],
+            "id": 748783,
+            "original_language": "en",
+            "original_title": "The Garfield Movie",
+            "overview": "Garfield, the world-famous, Monday-hating, lasagna-loving indoor cat, is about to have a wild outdoor adventure! After an unexpected reunion with his long-lost father – scruffy street cat Vic – Garfield and his canine friend Odie are forced from their perfectly pampered life into joining Vic in a hilarious, high-stakes heist.",
+            "popularity": 19.3248,
+            "poster_path": "/xYduFGuch9OwbCOEUiamml18ZoB.jpg",
+            "release_date": "2024-04-30",
+            "title": "The Garfield Movie",
+            "video": false,
+            "vote_average": 7.1,
+            "vote_count": 1279
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/kyBOGOBUMdGWOhzECuosPSzoMpi.jpg",
+            "genre_ids": [
+                28,
+                27,
+                878
+            ],
+            "id": 1071585,
+            "original_language": "en",
+            "original_title": "M3GAN 2.0",
+            "overview": "After the underlying tech for M3GAN is stolen and misused by a powerful defense contractor to create a military-grade weapon known as Amelia, M3GAN's creator Gemma realizes that the only option is to resurrect M3GAN and give her a few upgrades, making her faster, stronger, and more lethal.",
+            "popularity": 18.6858,
+            "poster_path": "/hq0ONyCxMNirXetaEjDY7iOp29p.jpg",
+            "release_date": "2025-06-25",
+            "title": "M3GAN 2.0",
+            "video": false,
+            "vote_average": 0.0,
+            "vote_count": 0
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/hRn5oyuhrVFjLwDpe73UvqgvPht.jpg",
+            "genre_ids": [
+                28,
+                14,
+                27
+            ],
+            "id": 793387,
+            "original_language": "ko",
+            "original_title": "거룩한 밤: 데몬 헌터스",
+            "overview": "When a devil-worshipping criminal network plunges Seoul into chaos, the police turn to Holy Night—a trio of supernatural demon hunters—to restore order and defeat the rising evil.",
+            "popularity": 18.662,
+            "poster_path": "/v3Mo77Qjp6pctpD4eJaNT6kFRSB.jpg",
+            "release_date": "2025-04-30",
+            "title": "Holy Night: Demon Hunters",
+            "video": false,
+            "vote_average": 6.088,
+            "vote_count": 17
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/lS49jyUZg9xHfelHMsmL3o3H6rq.jpg",
+            "genre_ids": [
+                35,
+                27,
+                14
+            ],
+            "id": 1112466,
+            "original_language": "fr",
+            "original_title": "Les femmes au balcon",
+            "overview": "As a heat wave brings a Marseille neighbourhood to the boil, three roommates gleefully meddle in the lives of their neighbours from their balcony. Until a late night drink turns into a bloody affair.",
+            "popularity": 17.9155,
+            "poster_path": "/rEgAdJtf8S8JgUG2NJoWiRvpTz.jpg",
+            "release_date": "2024-11-15",
+            "title": "The Balconettes",
+            "video": false,
+            "vote_average": 6.5,
+            "vote_count": 57
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/dfNg7LagiVdnuT2tVDcaH66tgWK.jpg",
+            "genre_ids": [
+                27
+            ],
+            "id": 1151031,
+            "original_language": "en",
+            "original_title": "Bring Her Back",
+            "overview": "Following the death of their father, a brother and sister are introduced to their new sibling by their foster mother, only to learn that she has a terrifying secret.",
+            "popularity": 14.8883,
+            "poster_path": "/1zcH6vJs0TnCVXK7TGdTkEzR5J8.jpg",
+            "release_date": "2025-05-28",
+            "title": "Bring Her Back",
+            "video": false,
+            "vote_average": 7.3,
+            "vote_count": 41
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/zVAA1hKxxXzk85j7nCP5ELlR8Ef.jpg",
+            "genre_ids": [
+                18,
+                14
+            ],
+            "id": 842924,
+            "original_language": "en",
+            "original_title": "The Life of Chuck",
+            "overview": "In this extraordinary story of an ordinary man, Charles 'Chuck' Krantz experiences the wonder of love, the heartbreak of loss, and the multitudes contained in all of us.",
+            "popularity": 14.6262,
+            "poster_path": "/oumprkO9bThExP8NwxBIBnvBu2v.jpg",
+            "release_date": "2025-06-05",
+            "title": "The Life of Chuck",
+            "video": false,
+            "vote_average": 7.698,
+            "vote_count": 58
+        }
+    ],
+    "total_pages": 40,
+    "total_results": 792
+}
