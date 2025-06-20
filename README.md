@@ -14,7 +14,7 @@ This app demonstrates clean architecture with layers: **data**, **domain**, and 
 ## ✨ Features
 
 - Browse movies by category (Popular, Top Rated, Upcoming)
-- Movie details with cast information
+- Movie details simple information
 - Clean Architecture implementation
 - GetX for state management
 - Responsive UI design
