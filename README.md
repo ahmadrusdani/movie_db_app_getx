@@ -6,7 +6,10 @@ This app demonstrates clean architecture with layers: **data**, **domain**, and 
 
 ---
 
-| ![Home Screen](./assets/screenshot/Screenshot_1750398509.png) | ![Movie Details](./assets/screenshot/Screenshot_1750398519.png) | ![Movie List](./assets/screenshot/Screenshot_1750398525.png) |
+| <img src="./assets/screenshot/Screenshot_1750398509.png" alt="Home Screen" width="200"/> | <img src="./assets/screenshot/Screenshot_1750398519.png" alt="Movie Details" width="200"/> | <img src="./assets/screenshot/Screenshot_1750398525.png" alt="Movie List" width="200"/> |
+|:--:|:--:|:--:|
+| Home Screen | Movie Details | Movie List |
+
 
 ## ✨ Features
 
