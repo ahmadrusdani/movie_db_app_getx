@@ -1,16 +1,88 @@
-# movie_db_app_getx
+# 🎬 Movie DB App (Flutter + GetX)
 
-A new Flutter project.
+A sample movie listing application built using [Flutter](https://flutter.dev), [GetX](https://pub.dev/packages/get), Hive for local storage, and TMDb API.
 
-## Getting Started
+This app demonstrates clean architecture with layers: **data**, **domain**, and **presentation**, and includes **unit tests** for domain logic using mock repositories and JSON-based test fixtures.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+| ![Home Screen](./assets/screenshots/Screenshot_1750398509.png) | ![Movie Details](./assets/screenshots/Screenshot_1750398519.png) | ![Movie List](./assets/screenshots/Screenshot_1750398525.png) |
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Browse movies by category (Popular, Top Rated, Upcoming)
+- Movie details with cast information
+- Clean Architecture implementation
+- GetX for state management
+- Responsive UI design
+- Environment configuration
+- Makefile support for common tasks
+
+---
+
+## 📦 Requirements
+
+- Flutter SDK (3.2.++)
+- Dart 3.2.+
+- Android Studio or VS Code
+- An Android/iOS emulator or physical device
+- TMDb API key (if you want to integrate real API calls)
+
+---
+
+## 🔐 API Key Setup
+
+Before running the app, you **must create a `.env` file** in the root directory containing your TMDb API key.
+
+### Create `.env`
+
+```env
+TMDB_API_KEY=your_tmdb_api_key_here
+```
+
+## 🛠 Installation Steps
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/ahmadrusdani/movie_db_app_getx.git
+cd movie_db_app_getx
+```
+
+### 2. Install Dependencies
+
+```bash
+flutter pub get
+```
+
+### 3. Add .env File
+
+Create a .env file as described above to store your API key.
+
+### 4. Run the App
+
+You can run the app using the Makefile:
+
+```bash
+make run
+
+or
+
+flutter run
+```
+
+## 🧪 Running Unit Tests
+
+This project includes unit tests for domain use cases like DetailMovie.
+
+### ✅ Run All Tests
+
+Using the Makefile:
+
+```bash
+make test
+
+or manually:
+
+flutter test
+```
