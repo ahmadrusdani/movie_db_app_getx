@@ -89,3 +89,7 @@ or manually:
 
 flutter test
 ```
+
+## 🔗 App Link
+
+Download the app from [Movie DB App on This](https://drive.google.com/file/d/1MUsoyPMACM6rdg1HPHMmeBDIRmlEDqtE/view?usp=sharing)
