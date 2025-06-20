@@ -3,7 +3,6 @@ import 'package:get/get.dart';
 import 'package:movie_db_app_getx/core/app/app_routes.dart';
 import 'package:movie_db_app_getx/data/model/movie/movie_model.dart';
 import 'package:movie_db_app_getx/domain/enum/movie_type.dart';
-import 'package:movie_db_app_getx/domain/usecase/favorite_change.dart';
 import 'package:movie_db_app_getx/domain/usecase/now_playing_movie.dart';
 import 'package:movie_db_app_getx/domain/usecase/popular_movie.dart';
 import 'package:movie_db_app_getx/domain/usecase/top_rated_movie.dart';
