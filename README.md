@@ -37,7 +37,7 @@ Before running the app, you **must create a `.env` file** in the root directory 
 ### Create `.env`
 
 ```env
-TMDB_API_KEY=your_tmdb_api_key_here
+API_KEY=your_tmdb_api_key_here
 ```
 
 ## 🛠 Installation Steps
