@@ -1,11 +1,8 @@
-import 'package:flutter_dotenv/flutter_dotenv.dart';
-
 class Constants {
   //Base URLs
   static const String movieDbBaseUrl = 'https://api.themoviedb.org/3';
 
   //Movies URLs
-  static const String latestMovie = '/movie/latest';
   static const String nowPlayingMovies = '/movie/now_playing';
   static const String popularMovies = '/movie/popular';
   static const String topRatedMovies = '/movie/top_rated';
