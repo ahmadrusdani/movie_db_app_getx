@@ -83,7 +83,7 @@ This project includes unit tests for domain use cases like DetailMovie.
 Using the Makefile:
 
 ```bash
-make test
+make domain-test
 
 or manually:
 
